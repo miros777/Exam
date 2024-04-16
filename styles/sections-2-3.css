@@ -306,7 +306,7 @@ nav > ul > .img-coffee > a {
 }
 
 #forthpage {
-    background-image: url("images/fourth-page-background.png");
+    background-image: url("../images/fourth-page-background.png");
     height: 650px;
     width: 100%;
     background-size: cover;
