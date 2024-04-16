@@ -1,0 +1,154 @@
+#thirdpage > .text-headers {
+    color: #000;
+    font-family: "Josefin Sans", serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 55.9px */
+    letter-spacing: 6px;
+    margin-top: 200px;
+}
+
+.text-headers {
+    color: #000;
+    font-family: "Josefin Sans", serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 55.9px */
+    letter-spacing: 6px;
+}
+
+#thirdpage > .text-paragraphs {
+    color: #000;
+    font-family: "Open Sans", serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 28.8px */
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.text-paragraphs {
+    color: #000;
+    font-family: "Open Sans", serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 28.8px */
+    opacity: 0.7;
+}
+
+#spacing {
+    letter-spacing: 0;
+}
+
+#secondpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#granuls {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-top: 150px;
+    margin-right: 40px;
+}
+
+#granuls > div:nth-child(3) {
+    position: relative;
+    left: 40px;
+    width: 250px;
+}
+
+.item-price {
+    color: #0C0D0C;
+    font-family: "Josefin Sans", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+    margin: 10px 0 10px 0;
+}
+
+.item-name {
+    color: #000;
+    font-family: "Josefin Sans", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    /*line-height: 130%; !* 41.6px *!*/
+    margin: 10px 0 10px 0;
+}
+
+.item-description {
+    color: #000;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.6;
+    width: 225px;
+}
+
+.href-paragraph {
+    text-decoration: none;
+    color: #000;
+}
+
+#thirdpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#thirdpage > .text-headers {
+    letter-spacing: 0;
+}
+
+#thirdpage > .text-paragraphs {
+    width: 609px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#img-container-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#first-img-row, #second-img-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#first-img-row {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#loadmore {
+    color: #FF4B32;
+    text-align: center;
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    margin-top: 75px;
+}
+
+#coverfourth {
+    height: 1500px;
+}
