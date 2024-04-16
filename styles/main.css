@@ -14,7 +14,7 @@ body {
     height: 749px;
     background-color: #000;
     background-image: url(../images/background.png);
-    background-size: contain;
+    background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     color: var(--two-color);
@@ -53,4 +53,108 @@ body {
 .nav-list__item:hover {
     font-weight: 700;
     color: var(--one-color);
+}
+
+/*------------------------------------------------*/
+.dreams {
+    margin-left: 147px;
+    margin-top: 120px;
+}
+
+.dreams>button {
+    padding: 16px 35px;
+    border-radius: 5px;
+    background-color: var(--one-color);
+    color: var(--two-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+}
+
+.dreams>p:nth-child(1) {
+    width: 524px;
+    margin: 0 0 28px 0;
+    color: var(--two-color);
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+}
+
+.dreams>p:nth-child(2) {
+    width: 506px;
+    color: var(--two-color);
+    font-family: "Open Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: .8;
+    margin: 0 0 48px 0;
+}
+
+/*-----------------------------------------------------*/
+.offer {
+    /*width: 1200px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-content: center;*/
+    /*justify-content: space-around;*/
+    margin: 140px 0 0 0;
+    padding: 0 147px;
+}
+
+.offer>h1 {
+    padding: 0;
+    color: var(--third-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+.p-bottom-h1 {
+    width: 506px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    color: var(--third-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: .7;
+}
+
+.coffe-beans {
+    display: flex;
+}
+
+.coffe-bean>img {
+    width: 300px;
+    height: 265px;
+    margin: 0;
+    padding: 0;
+}
+
+.coffe-bean__price {
+    color: var(--third-color);
+    margin: 35px 0 0 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.coffe-bean>h3 {
+    color: var(--third-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.coffe-bean:nth-child(2) {
+    margin: 0 92px;
+}
+
+.coffe-bean__desc {
+    color: var(--third-color);
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
 }
