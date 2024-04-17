@@ -66,14 +66,12 @@
 /*FOOTER*************************/
 
 footer.footer-black{
-    padding: 75px 0;
+    padding: 70px 0 45px;
     color: #FFF;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    /*opacity: .7;*/
-    /*background: none;*/
     display: block;
 }
 footer.footer-black ul{
@@ -84,6 +82,7 @@ footer.footer-black a{
     text-decoration: none;
     color: #fff;
     opacity: 1;
+    line-height: 26px;
 }
 .footer-black-list-wrapper{
     display: flex;
@@ -143,7 +142,7 @@ footer.footer-black a{
     font-weight: 400;
 }
 .footer-black__list-item{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .footer-black__list a{
     text-decoration: none;
@@ -169,7 +168,11 @@ footer.footer-black a{
 }
 .footer-black__list-item p{
     width: 250px;
+    line-height: 28px;
 }
 .social-list__wrapper-img img{
     width: 40px;
+}
+.footer-black__list-item_phone{
+    margin-top: 30px;
 }
