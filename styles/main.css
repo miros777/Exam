@@ -95,12 +95,11 @@ body {
 .description {
     width: 524px;
     height: 401px;
+    margin: 3em 3em;
     color: var(--white-color);
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-around;*/
-    /*align-content: center;*/
+    position: absolute;
+    bottom: 6em;
+    top: 10em;
 }
 
 .description>p:nth-child(1) {
