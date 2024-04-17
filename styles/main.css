@@ -1,94 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-    --one-color: #FF4B32;
-    --two-color: #ffff;
-    --third-color: #000;
+    --orange-color: #FF4B32;
+    --white-color: #ffff;
+    --black-color: #000;
 }
 
-body {
+* {
     margin: 0;
 }
 
-.container {
-    width: 100vw;
-    height: 749px;
-    background-color: #000;
-    background-image: url(../images/background.png);
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    color: var(--two-color);
+body {
+    font-size: 20px;
 }
 
-.header {
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    width: 1440px;
+    height: 729px;
+}
+
+.black-background {
     display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
+    justify-content: center;
+    background-color: var(--black-color);
+    background-image: url(../images/image-main.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    color: var(--one-color);
+    color: var(--orange-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
-.nav-list {
+.logo>a {
+    text-decoration: none;
+    color: var(--orange-color);
+}
+
+.nav {
+    height: 2.5em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    width: 650px;
     display: flex;
 }
 
-.nav-list__link {
-    list-style-type: none;
+.nav-list__item>a {
+    color: var(--white-color);
+    font-family: "Open Sans", sans-serif;
+    font-size:.9em;
+    font-weight: 400;
+    opacity: 0.6;
 }
 
-.nav-list__item {
-    margin-right: 45px;
-    text-decoration: none;
+.nav-list__item>a:hover {
+    color: var(--orange-color);
+    font-weight: 700;
+}
+
+.description {
+    width: 524px;
+    height: 401px;
+    color: var(--white-color);
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
+    /*align-content: center;*/
+}
+
+.description>p:nth-child(1) {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.9em;
+    font-weight: 500;
+    margin: 0 0 .5em 0;
+}
+
+.description>p:nth-child(2) {
+    margin: 0 0 2.4em 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    opacity: 0.8;
+
+}
+
+.description>button {
+    padding: .8em 1.8em;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    font-weight: 200;
-    color: var(--two-color);
-    opacity: .6;
-}
-
-.nav-list__item:hover {
-    font-weight: 700;
-    color: var(--one-color);
-}
-
-/*------------------------------------------------*/
-.dreams {
-    margin-left: 147px;
-    margin-top: 120px;
-}
-
-.dreams>button {
-    padding: 16px 35px;
+    font-weight: 600;
+    background-color: var(--orange-color);
+    color: var(--white-color);
     border-radius: 5px;
-    background-color: var(--one-color);
-    color: var(--two-color);
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "Open Sans",sans-serif;
+    border: none;
+    outline: none;
 }
 
-.dreams>p:nth-child(1) {
-    width: 524px;
-    margin: 0 0 28px 0;
-    color: var(--two-color);
-    font-family: "Josefin Sans",sans-serif;
-    font-size: 58px;
-    font-weight: 500;
-}
-
-.dreams>p:nth-child(2) {
-    width: 506px;
-    color: var(--two-color);
-    font-family: "Open Sans",sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    opacity: .8;
-    margin: 0 0 48px 0;
-}
 
 /*-----------------------------------------------------*/
 .offer {
@@ -103,7 +129,7 @@ body {
 
 .offer>h1 {
     padding: 0;
-    color: var(--third-color);
+    color: var(--black-color);
     font-family: "Josefin Sans", sans-serif;
     font-size: 43px;
     font-weight: 600;
@@ -113,7 +139,7 @@ body {
     width: 506px;
     margin: 20px 0 0 0;
     padding: 0;
-    color: var(--third-color);
+    color: var(--black-color);
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -132,7 +158,7 @@ body {
 }
 
 .coffe-bean__price {
-    color: var(--third-color);
+    color: var(--black-color);
     margin: 35px 0 0 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
@@ -141,7 +167,7 @@ body {
 }
 
 .coffe-bean>h3 {
-    color: var(--third-color);
+    color: var(--black-color);
     font-family: "Josefin Sans", sans-serif;
     font-size: 32px;
     font-weight: 600;
@@ -152,7 +178,7 @@ body {
 }
 
 .coffe-bean__desc {
-    color: var(--third-color);
+    color: var(--black-color);
     font-family: "Open Sans",sans-serif;
     font-size: 16px;
     font-weight: 400;
