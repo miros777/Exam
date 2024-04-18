@@ -1,40 +1,38 @@
 #thirdpage > .text-headers {
-    color: #000;
+    color: var(--black-color);
     font-family: "Josefin Sans", serif;
     font-size: 43px;
-    font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 55.9px */
     letter-spacing: 6px;
-    margin-top: 200px;
 }
 
 .text-headers {
-    color: #000;
+    color: var(--black-color);
     font-family: "Josefin Sans", serif;
     font-size: 43px;
-    font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 55.9px */
     letter-spacing: 6px;
+    text-align: center;
 }
 
-#thirdpage > .text-paragraphs {
-    color: #000;
+#thirdpage .text-paragraphs {
+    color: var(--black-color);
     font-family: "Open Sans", serif;
     font-size: 19px;
-    font-style: normal;
     font-weight: 400;
     line-height: 29px; /* 28.8px */
     opacity: 0.7;
-    margin-top: 20px;
+    margin: 20px auto 0;
+    text-align: center;
+    max-width: 609px;
 }
 
 .text-paragraphs {
-    color: #000;
+    color: var(--black-color);
     font-family: "Open Sans", serif;
     font-size: 19px;
-    font-style: normal;
     font-weight: 400;
     line-height: 29px; /* 28.8px */
     opacity: 0.7;
@@ -67,7 +65,7 @@
 }
 
 .item-price {
-    color: #0C0D0C;
+    color: var(--black-color);
     font-family: "Josefin Sans", serif;
     font-size: 24px;
     font-style: normal;
@@ -77,20 +75,17 @@
 }
 
 .item-name {
-    color: #000;
+    color: var(--black-color);
     font-family: "Josefin Sans", serif;
     font-size: 32px;
-    font-style: normal;
     font-weight: 600;
-    /*line-height: 130%; !* 41.6px *!*/
     margin: 10px 0 10px 0;
 }
 
 .item-description {
-    color: #000;
+    color: var(--black-color);
     font-family: "Open Sans", serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 25.6px */
     opacity: 0.6;
@@ -99,7 +94,16 @@
 
 .href-paragraph {
     text-decoration: none;
-    color: #000;
+    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+
+.href-paragraph:hover img{
+    width: 99%;
+    border-radius: 5px;
 }
 
 #thirdpage {
@@ -107,7 +111,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 227px;
 }
 
 #thirdpage > .text-headers {
@@ -143,10 +147,15 @@
     text-align: center;
     font-family: "Open Sans", serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
     margin-top: 75px;
+    transition: 0.5s ease;
+}
+#loadmore:hover {
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s ease;
 }
 
 #coverfourth {
@@ -159,7 +168,6 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    /*scale: 0.7;*/
     margin-top: 143px;
     display: flex;
     justify-content: space-evenly;
@@ -168,7 +176,7 @@
 }
 
 #followus {
-    color: #FF4B32;
+    color: var(--orange-color);
     text-align: center;
     font-family: "Open Sans", serif;
     font-size: 24px;
@@ -177,17 +185,29 @@
     line-height: 150%; /* 36px */
 }
 
-#forthpage > div > .text-headers {
+#forthpage div .text-headers {
     color: #FFF;
     text-align: center;
     font-family: "Josefin Sans", serif;
     font-size: 43px;
-    font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 55.9px */
     width: 810px;
     letter-spacing: 0;
-
+}
+#forthpage div.forthpage__top-content{
+    margin-top: 65px;
+}
+#contacts-compress > p:last-child img{
+    margin-top: 5px;
+}
+#contacts-compress{
+    margin-top: 35px;
+}
+.wrapper-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contacts {
@@ -195,7 +215,6 @@
     text-align: center;
     font-family: "Open Sans", serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 36px */
     opacity: 0.7;
@@ -213,6 +232,17 @@
     width: 50px;
     height: auto;
     gap: 40px;
+    margin-top: 30px;
+}
+.round-buttons a{
+    transition: 0.5s ease;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.round-buttons a:hover{
+    background: var(--orange-color);
+    transition: 0.5s ease;
 }
 
 .contacts {
@@ -231,4 +261,16 @@
     width: 609px;
     margin-top: 20px;
     margin-bottom: 60px;
+}
+#contacts-compress p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contacts-compress a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#contacts-compress a:hover{
+    color: var(--orange-color);
 }

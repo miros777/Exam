@@ -13,7 +13,7 @@
     font-style: normal;
 }
 .news>*{
-    color: #000000;
+    color: var(--black-color);
 }
 .news__h2{
     font-family: "Josefin Sans", sans-serif;
@@ -29,7 +29,7 @@
     min-height: 536px;
     margin-top: 60px;
     border-radius: 20px;
-    background: #FFF;
+    background: var(--white-color);
     box-shadow: 40px 15px 136px 0 rgba(0, 0, 0, 0.20);
 }
 .news__top-content{
@@ -47,10 +47,16 @@
 }
 .news__item-link{
     text-decoration: none;
-    color: #FF4B32;
+    color: var(--orange-color);
     font-weight: 600;
     margin-top: 20px;
     display: block;
+    transition: 1s ease;
+}
+.news__item-link:hover{
+    font-weight: 700;
+    transition: 1s ease;
+
 }
 .news__item-content{
     font-weight: 400;
@@ -67,7 +73,7 @@
 
 footer.footer-black{
     padding: 70px 0 45px;
-    color: #FFF;
+    color: var(--white-color);
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -80,7 +86,7 @@ footer.footer-black ul{
 }
 footer.footer-black a{
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     opacity: 1;
     line-height: 26px;
 }
@@ -124,7 +130,7 @@ footer.footer-black a{
 }
 .social-list a{
     transition: 0.5s ease;
-    background: black;
+    background: var(--black-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -134,7 +140,7 @@ footer.footer-black a{
     transition: 0.5s ease;
     position: relative;
     top: -1px;
-    background: #ff4b32;
+    background: var(--orange-color);
 }
 .footer-black__list-item:first-child{
     text-transform: uppercase;
@@ -148,12 +154,12 @@ footer.footer-black a{
     text-decoration: none;
 }
 .footer-black__list a:hover{
-    color: #ff4b32;
+    color: var(--orange-color);
 }
 .footer-black__list_logo:first-child{
     display: flex;
     align-items: center;
-    color: #FF4B32;
+    color: var(--orange-color);
     font-family: "Josefin Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
