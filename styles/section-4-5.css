@@ -80,6 +80,10 @@ footer.footer-black{
     font-weight: 400;
     display: block;
 }
+.container-footer-bg{
+    background: var(--black-color);
+    height: auto;
+}
 footer.footer-black ul{
     margin: 0;
     padding: 0;
